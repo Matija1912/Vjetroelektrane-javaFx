@@ -12,15 +12,9 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.util.Callback;
 import production.Users.Credentials;
-import production.Users.User;
 import production.database.DatabaseUtils;
-import production.enums.UserType;
-import production.files.FileUtils;
-
-import java.io.File;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 public class UsersController {
     @FXML
