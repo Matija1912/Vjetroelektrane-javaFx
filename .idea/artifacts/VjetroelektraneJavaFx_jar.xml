@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="VjetroelektraneJavaFx:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/VjetroelektraneJavaFx_jar</output-path>
+    <root id="archive" name="VjetroelektraneJavaFx.jar">
+      <element id="module-output" name="VjetroelektraneJavaFx" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/21-ea+24/javafx-controls-21-ea+24-mac-aarch64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/21-ea+24/javafx-base-21-ea+24-mac-aarch64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-web/20.0.2/javafx-web-20.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/21-ea+24/javafx-graphics-21-ea+24-mac-aarch64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/21-ea+24/javafx-base-21-ea+24.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-web/20.0.2/javafx-web-20.0.2-mac-aarch64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/21-ea+24/javafx-fxml-21-ea+24.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/21-ea+24/javafx-controls-21-ea+24.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/21-ea+24/javafx-fxml-21-ea+24-mac-aarch64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/h2database/h2/2.2.224/h2-2.2.224.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-media/20.0.2/javafx-media-20.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-media/20.0.2/javafx-media-20.0.2-mac-aarch64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/21-ea+24/javafx-graphics-21-ea+24.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

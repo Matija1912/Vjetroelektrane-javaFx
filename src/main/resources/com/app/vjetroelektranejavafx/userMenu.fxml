@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="menuVBox" alignment="CENTER" prefHeight="28.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.vjetroelektranejavafx.MenuController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <MenuBar fx:id="menuBar" prefHeight="28.0" prefWidth="600.0" style="-fx-background-color: transparent;">
+        <menus>
+            <Menu mnemonicParsing="false" text="List">
+                <items>
+                    <MenuItem mnemonicParsing="false" onAction="#showUserTurbines" text="Turbines" />
+                </items>
+            </Menu>
+         <Menu mnemonicParsing="false" text="Turbine update">
+            <items>
+               <MenuItem mnemonicParsing="false" onAction="#showAddTurbineToUser" text="Add turbine" />
+               <MenuItem mnemonicParsing="false" onAction="#showDeleteTurbineFromUser" text="Remove turbine" />
+            </items>
+         </Menu>
+         <Menu mnemonicParsing="false" text="Current data">
+            <items>
+               <MenuItem mnemonicParsing="false" onAction="#showEnergyOutput" text="Energy output" />
+            </items>
+         </Menu>
+            <Menu mnemonicParsing="false" text="Logout">
+                <items>
+                    <MenuItem mnemonicParsing="false" onAction="#logout" text="Logout" />
+                </items>
+            </Menu>
+         <Menu mnemonicParsing="false" text="Reset credentials">
+            <items>
+               <MenuItem mnemonicParsing="false" onAction="#resetPasswordUserView" text="Reset password" />
+               <MenuItem mnemonicParsing="false" onAction="#resetUsernameUserView" text="Reset username" />
+            </items>
+         </Menu>
+        </menus>
+    </MenuBar>
+</VBox>

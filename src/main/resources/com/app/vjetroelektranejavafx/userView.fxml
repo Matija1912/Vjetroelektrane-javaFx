@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" >
+   <fx:include source="userMenu.fxml" />
+   <Label layoutX="119.0" layoutY="200.0" text="WELCOME TO USER APP" textFill="#0598dd">
+      <font>
+         <Font size="33.0" />
+      </font>
+   </Label>
+
+</AnchorPane>

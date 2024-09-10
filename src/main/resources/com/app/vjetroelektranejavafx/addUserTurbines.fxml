@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.vjetroelektranejavafx.AddTurbinesToUserController">
+    <fx:include source="userMenu.fxml" />
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="162.0" layoutY="62.0" prefHeight="34.0" prefWidth="251.0" text="Add turbine" textAlignment="CENTER">
+        <font>
+            <Font name="System Bold" size="28.0" />
+        </font>
+    </Label>
+    <GridPane layoutY="97.0" prefHeight="290.0" prefWidth="594.0">
+        <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="375.0" minWidth="10.0" prefWidth="306.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="290.0" minWidth="10.0" prefWidth="288.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="178.3529052734375" minHeight="10.0" prefHeight="113.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="194.43521118164062" minHeight="10.0" prefHeight="79.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addTurbine" prefHeight="26.0" prefWidth="137.0" text="Add turbine" textAlignment="JUSTIFY" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <cursor>
+               <Cursor fx:constant="NONE" />
+            </cursor></Button>
+         <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="167.0" text="Select turbine to add:">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Label>
+         <ComboBox fx:id="turbinesComboBox" prefHeight="26.0" prefWidth="218.0" GridPane.columnIndex="1" />
+        </children>
+    </GridPane>
+
+</AnchorPane>

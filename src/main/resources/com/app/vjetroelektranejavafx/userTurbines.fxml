@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.vjetroelektranejavafx.UserTurbinesController">
+    <fx:include source="userMenu.fxml" />
+    <Label layoutX="231.0" layoutY="62.0" prefHeight="16.0" prefWidth="137.0" text="Turbines" textAlignment="CENTER">
+        <font>
+            <Font name="System Bold" size="28.0" />
+        </font>
+    </Label>
+    <GridPane layoutY="102.0" prefHeight="285.0" prefWidth="594.0">
+        <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="178.3529052734375" minHeight="10.0" prefHeight="30.678176879882812" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="178.3529052734375" minHeight="10.0" prefHeight="41.82182312011719" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="194.43521118164062" minHeight="10.0" prefHeight="185.576416015625" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <children>
+            <Label prefHeight="20.0" prefWidth="146.0" text="Select manufacturer:">
+                <font>
+                    <Font size="16.0" />
+                </font>
+            </Label>
+            <ComboBox fx:id="manufacturerComboBox" prefHeight="26.0" prefWidth="223.0" GridPane.columnIndex="1" />
+            <TableView fx:id="turbinesTableView" prefHeight="218.0" prefWidth="589.0" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                <columns>
+                    <TableColumn fx:id="turbineIdTableColumn" prefWidth="51.0" text="Id" />
+                    <TableColumn fx:id="manufacturerTableColumn" prefWidth="90.0" text="Manufacturer" />
+                    <TableColumn fx:id="turbineTypeTableColumn" prefWidth="90.0" text="Turbine type" />
+               <TableColumn fx:id="rotorDiameterTableColumn" prefWidth="88.0" text="Rotor diameter" />
+               <TableColumn fx:id="generatorEfficiencyTableColumn" prefWidth="117.0" text="Generator efficiency" />
+               <TableColumn fx:id="cutInWindSpeedTableColumn" prefWidth="157.0" text="Cut in wind speed" />
+                </columns>
+            </TableView>
+            <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#turbinesSearch" prefHeight="26.0" prefWidth="82.0" text="Search" textAlignment="JUSTIFY" GridPane.rowIndex="1" />
+        </children>
+    </GridPane>
+
+</AnchorPane>

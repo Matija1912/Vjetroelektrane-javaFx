@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.vjetroelektranejavafx.AddNewTurbineController">
+    <fx:include source="adminMenu.fxml" />
+    <Label layoutX="213.0" layoutY="62.0" prefHeight="34.0" prefWidth="200.0" text="Add new Turbine" textAlignment="CENTER" textFill="#a8a8a8">
+        <font>
+            <Font name="System Bold" size="28.0" />
+        </font>
+    </Label>
+    <GridPane layoutY="97.0" prefHeight="290.0" prefWidth="594.0">
+        <columnConstraints>
+         <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="375.0" minWidth="10.0" prefWidth="153.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="450.0" minWidth="10.0" prefWidth="189.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="258.0" minWidth="10.0" prefWidth="252.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="178.3529052734375" minHeight="10.0" prefHeight="25.900253295898438" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="178.3529052734375" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="178.3529052734375" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="178.3529052734375" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="178.3529052734375" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="178.3529052734375" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="194.43521118164062" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#saveNewTurbine" prefHeight="26.0" prefWidth="137.0" style="-fx-background-color: #0598ff;" text="Add new turbine" textAlignment="JUSTIFY" textFill="WHITE" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+            <cursor>
+               <Cursor fx:constant="NONE" />
+            </cursor></Button>
+            <TextField fx:id="manufacturerTextField" prefHeight="26.0" prefWidth="181.0" promptText="Enter manufacturer" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" GridPane.columnIndex="2" />
+         <TextField fx:id="rotorDiameterTextField" promptText="Enter rotor diameter" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+         <TextField fx:id="generatorEfficiencyTextField" promptText="Enter generator efficiency" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: #0598ff; -fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         <TextField fx:id="cutInWindSpeedTextField" promptText="Enter cut in wind speed" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: #0598ff; -fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+         <TextField fx:id="maintenanceIntervalTextField" promptText="Enter maintenance interval" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: #0598ff; -fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+         <Label alignment="CENTER" prefHeight="20.0" prefWidth="208.0" text="Turbine type:" textFill="#a8a8a8" GridPane.rowIndex="1">
+            <font>
+               <Font name="System Bold" size="16.0" />
+            </font>
+         </Label>
+         <RadioButton fx:id="horizontalAxisRadioButton" mnemonicParsing="false" text="Horizontal axis" textFill="#a8a8a8" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" />
+         <RadioButton fx:id="staticHorizontalAxisRadioButton" mnemonicParsing="false" text="Static horizontal axis" textFill="#a8a8a8" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" />
+         <RadioButton fx:id="verticalAxisRadioButton" mnemonicParsing="false" text="Vertiacal axis" textFill="#a8a8a8" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" />
+         <Label fx:id="orientationLabel" alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="196.0" text="Enter orientation in degrees:" textFill="#a8a8a8" GridPane.columnIndex="1" GridPane.rowIndex="5">
+            <font>
+               <Font name="System Bold" size="16.0" />
+            </font>
+         </Label>
+         <TextField fx:id="orientationInDegreesTextField" prefHeight="26.0" prefWidth="181.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: #0598ff; -fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+         <Label fx:id="bladeHeightLabel" alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="196.0" text="Enter blade height:" textFill="#a8a8a8" GridPane.columnIndex="1" GridPane.rowIndex="5">
+            <font>
+               <Font name="System Bold" size="16.0" />
+            </font>
+         </Label>
+         <TextField fx:id="bladeHeightTextField" prefHeight="26.0" prefWidth="181.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: #0598ff; -fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+        </children>
+    </GridPane>
+
+</AnchorPane>
